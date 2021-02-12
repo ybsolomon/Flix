@@ -16,6 +16,7 @@
 		666EA5DE25D60623005395A4 /* FlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EA5DD25D60623005395A4 /* FlixTests.swift */; };
 		666EA5E925D60623005395A4 /* FlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EA5E825D60623005395A4 /* FlixUITests.swift */; };
 		666EA5FA25D614A0005395A4 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EA5F925D614A0005395A4 /* MovieViewController.swift */; };
+		666EA5FF25D61C9E005395A4 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EA5FE25D61C9E005395A4 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		666EA5E825D60623005395A4 /* FlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixUITests.swift; sourceTree = "<group>"; };
 		666EA5EA25D60623005395A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		666EA5F925D614A0005395A4 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		666EA5FE25D61C9E005395A4 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				666EA5C625D60620005395A4 /* AppDelegate.swift */,
 				666EA5C825D60620005395A4 /* SceneDelegate.swift */,
 				666EA5CA25D60620005395A4 /* ViewController.swift */,
+				666EA5FE25D61C9E005395A4 /* MovieCell.swift */,
 				666EA5CC25D60620005395A4 /* Main.storyboard */,
 				666EA5CF25D60623005395A4 /* Assets.xcassets */,
 				666EA5D125D60623005395A4 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				666EA5CB25D60620005395A4 /* ViewController.swift in Sources */,
 				666EA5C725D60620005395A4 /* AppDelegate.swift in Sources */,
 				666EA5C925D60620005395A4 /* SceneDelegate.swift in Sources */,
+				666EA5FF25D61C9E005395A4 /* MovieCell.swift in Sources */,
 				666EA5FA25D614A0005395A4 /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
