@@ -59,6 +59,7 @@
                                             <outlet property="posterView" destination="c1K-oK-AAw" id="wmm-u7-bZx"/>
                                             <outlet property="synopsisLabel" destination="tvK-v1-CRa" id="hWr-po-FPr"/>
                                             <outlet property="titleLabel" destination="9bf-d8-1v8" id="vm0-oU-lq8"/>
+                                            <segue destination="B56-Aw-8oF" kind="show" id="ptf-Hc-Woe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -75,6 +76,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.6923076923076" y="118.00947867298578"/>
+        </scene>
+        <!--Superhero-->
+        <scene sceneID="hT5-nd-aJj">
+            <objects>
+                <viewController id="B56-Aw-8oF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RjV-Ok-AGR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F0t-FD-qr2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Superhero" id="nMn-Kd-jqW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17e-Yx-ltH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JuN-Cb-2VH">
