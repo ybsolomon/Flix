@@ -2,12 +2,12 @@
 //  GridViewCell.swift
 //  Flix
 //
-//  Created by Yordanos on 2/13/21.
+//  Created by Yordanos on 2/16/21.
 //
 
 import UIKit
 
-class GridCell: UICollectionViewCell {
-    @IBOutlet weak var posterView: UIImageView!
+class GridViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var posterView: UIImageView!
 }

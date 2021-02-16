@@ -150,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5QL-U5-KHh" customClass="GridViewCell" customModule="Flix" customModuleProvider="target">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5QL-U5-KHh">
                                 <rect key="frame" x="-7" y="-13" width="397" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -161,7 +161,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCell" id="ia4-7G-Sal" customClass="GridCell" customModule="Flix" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridViewCell" id="ia4-7G-Sal" customClass="GridViewCell" customModule="Flix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="188" height="301"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LY9-dB-Azb" customClass="GridCell" customModule="Flix" customModuleProvider="target">
@@ -176,7 +176,8 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="188" height="301"/>
                                         <connections>
-                                            <outlet property="posterView" destination="JFT-zi-92o" id="brQ-EM-E5h"/>
+                                            <outlet property="posterView" destination="JFT-zi-92o" id="HPL-ug-FAo"/>
+                                            <segue destination="3AT-de-JFQ" kind="show" id="276-n0-iN8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -231,6 +232,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtS-W8-Bfz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="844.61538461538464" y="373.93364928909949"/>
+        </scene>
+        <!--Details Cell View Controller-->
+        <scene sceneID="ezF-UX-f2g">
+            <objects>
+                <viewController id="3AT-de-JFQ" userLabel="Details Cell View Controller" customClass="CollectionDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sT-fr-7d2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5t-Dv-tjZ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="347"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3vI-ey-1JV">
+                                <rect key="frame" x="216" y="222" width="158" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUT-De-UJl">
+                                <rect key="frame" x="16" y="355" width="192" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="746-Gj-XZX">
+                                <rect key="frame" x="16" y="474" width="358" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jZA-PM-HZ8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RRA-r8-moC"/>
+                    <connections>
+                        <outlet property="backdropView" destination="l5t-Dv-tjZ" id="Tua-Dc-XJV"/>
+                        <outlet property="posterView" destination="3vI-ey-1JV" id="y3h-Cz-DGx"/>
+                        <outlet property="synopsisLabel" destination="746-Gj-XZX" id="WYe-Vi-vqC"/>
+                        <outlet property="titleLabel" destination="vUT-De-UJl" id="hHR-GL-b8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXI-yP-B1W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="1897"/>
         </scene>
     </scenes>
     <resources>

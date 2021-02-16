@@ -54,7 +54,7 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as! GridCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridViewCell", for: indexPath) as! GridViewCell
         
         let movie = movies[indexPath.item]
         
@@ -68,14 +68,20 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         return cell
     }
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        
+        let movie = movies[indexPath.item]
+
         // Pass the selected object to the new view controller.
+        let detailsViewController = segue.destination as! CollectionDetailsViewController
+        
+        detailsViewController.movie = movie
     }
-    */
 
 }
